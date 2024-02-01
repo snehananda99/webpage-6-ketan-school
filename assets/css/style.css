@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "catamaran",sans-serif;
+    font-size: 16px;
+}
+/* Universal CSS start */
+.text-orange{color:#EA512E;}
+.text-black{color:#1b0238;}
+.text-silver{color:#6b6b84}
+.bg-orange{background:#EA512E ;}
+.bg-light-orange{background:#fdf6ed ;}
+.bg-light-yellow{background:#fee9ca ;}
+.bg-yellow{background:#f5890d !important;}
+.mt-10{margin-top: 100px;}
+.mt-15{margin-top: 150px;}
+.mt-20{margin-top: 200px;}
+.pt-10{padding-top: 100px;}
+.pb-10{padding-bottom: 100px;}
+.pb-7{padding-bottom: 70px;}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5{
+    color: #1b0238;
+    font-family: 'catamaran',sans-serif;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    background: #EA512E;
+
+}
+.btn:hover{
+    color: #fff;
+    background: #f5890d;
+}
+p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family:"roboto",sans-serif ;
+    font-size: 16px;
+}
+/* Universal CSS start */
+/* Header section start */
+header nav div ul li a{
+    font-weight: 500 !important;
+    color:#1b0238 !important;
+}
+a.active{
+    color: #EA512E !important;
+}
+.nav-link:hover,
+.dropdown-item:hover{
+    color:#EA512E !important;
+    transition: 0.3s linear;
+
+}
+.dropdown-menu{
+    width: 280px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    /* margin-top: 10px; */
+
+}
+
+/* Header section end */
+/* Hero section start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;/*1st center horizantaly (x-axis)2nd center vertcaly(y-axis)*/ 
+    
+}
+.shape-1{
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+.shape-2{
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}
+.shape-3{
+    top: 61%;
+    left: .7%;
+    z-index: 9;
+    animation: move3 2s linear alternate infinite;
+}
+.shape-4{
+    top: 80%;
+    left: 50%;
+    animation: move4 2s linear alternate infinite;
+}
+.banner h1{
+    color: #1b0238;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Hero section end */
+/* Who we are section start */
+.who span,
+.popular span,
+.core-value span,
+.teacher span,
+.testimonial span{
+    font-weight: 600;
+    font-size: 30px;
+    color: #EA512E;
+    font-family: 'Sacramento', cursive;
+    
+}
+.who h3,
+.popular h3,
+.core-value h3,
+.teacher h3,
+.testimonial h3{
+    font-size: 45px;
+    margin-top: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.who ul li{
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+.who ul li span{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #EA512E;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.5s ;
+    font-family:'catamaran',sans-serif; 
+    
+
+}
+.who ul li:hover span{
+    background: #f5890d;
+    transition: all 1s ease-in;
+}
+.who-we-are-shape img{
+    position: absolute;
+    right: 5%;
+    top:730px;
+    animation: move5 3s linear alternate infinite;
+    max-width: 130px;
+    padding-bottom: 10px ;
+    
+}
+/* Who we are section end */
+/* Popular section start */
+.popular .card:hover img{
+    transform: scale(1.07) rotate(2deg);
+    transition: all 0.3s linear;
+}
+/* Popular section end */
+/* Core value section start */
+.core-value .number{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    color: #1b0238;
+    border-radius:50% !important;
+    margin-top: 1%;
+    margin-right: 20px;
+    display: inline-block;
+    border: 2px solid #fff;
+    outline: 1px solid #ccc;
+    outline-offset: 2px;
+    transition: 0.5s;
+    font-family:'catamaran',sans-serif; 
+    cursor: pointer;
+}
+.core-value .number:hover{
+    background:#EA512E !important;
+    color: #fff;
+    transition: 0.5s;
+    outline: 1px solid #EA512E;
+    transition:all 0.5s ease-in;
+
+}
+/* Core value section end */
+/* Teacher section start */
+.teacher .social-media{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -70px;
+    transition:all 0.6s ease-out;
+}
+.teacher .teacher-image:hover .social-media{
+    margin-bottom: 0px;
+}
+.teacher .social-media li {
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    background: #EA512E;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+.teacher .social-media li a{
+color: #fff;
+}
+.teacher .social-media li:hover{
+    background-color: #f5890d;
+    transition: .3s ease;
+}
+/* Teacher section end */
+/* Testimonial section start */
+.testimonial .card.teacher{
+    height: auto;
+    padding: 30px;
+    border-radius: 49%;
+    text-align: center;
+    background: #fee9ca;
+    border: none;
+    transition: 0.3s all linear;
+}
+.card.teacher div{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    line-height: 75px;
+    margin: auto;
+    background: #fff;
+    color: #EA512E;
+    margin-bottom: 10px;
+    /* transition: 0.3s all; */
+
+}
+.card.teacher:hover div{
+    background:#EA512E;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.testimonial .nav-button button{
+width: 50px;
+height: 50px;
+font-size: 40px;
+border-radius: 50%;
+line-height: 10px;
+text-align: center;
+font-weight: 600;
+color: #fff;
+background: #EA512E;
+transition: 0.3s linear;
+margin-left: -40px;
+margin-right: -40px;
+}
+.testimonial .nav-button button:hover{
+    background: #f5890d;
+    transition: 0.3s linear;
+}
+/* Testimonial section end */
+/* Animation section start */
+button.rotate{
+    width: 150px;
+    height: 50px;
+    
+    background-color: rgb(110, 146, 57);
+    color:#fff;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotate1 2s linear infinite alternate;
+}
+button.rotate:hover{
+    background: #f5890d;
+}
+/* Animation section end */
+
+@keyframes rotate1{
+    0%{
+     transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(0.7,0.7,0.7)rotate3d(0, 0, 1, -3deg);
+    }
+   100%{
+     transform: scale3d(1, 1, 1)rotate3d(0, 0, 1, 3deg);
+   }
+}
+@keyframes move {
+    0%{}
+    100%{left:3%}
+    
+}
+@keyframes move2 {
+    0%{}
+    100%{left:52%}
+    
+}
+@keyframes move3 {
+    0%{}
+    100%{left:3%}
+    
+}
+@keyframes move4 {
+    0%{}
+    100%{top:75%}
+    
+}
+@keyframes move5 {
+    0%{}
+    100%{right:7% }
+    
+}
